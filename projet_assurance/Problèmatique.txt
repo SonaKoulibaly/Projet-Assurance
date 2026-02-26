@@ -1,0 +1,24 @@
+Analyse des sinistres et profil des assurés 
+
+Objectif :
+
+•Permettre à une compagnie d’assurance de suivre les sinistres et les caractéristiques des assurés.
+
+•Identifier les profils à risque, visualiser les tendances et aider à la décision pour la tarification ou la prévention
+Base de données : assurance_data_1000.csv
+
+Variables de la base de données (1000 sujets)
+
+Colonne	Type	Description
+id_assure	int	Identifiant unique de l’assuré
+age	int	Âge de l’assuré
+sexe	str	Masculin / Féminin
+type_assurance	str	Auto / Santé / Habitation / Vie
+duree_contrat	int	Durée du contrat (en années)
+montant_prime	float	Montant annuel payé par l’assuré
+nb_sinistres	int	Nombre de sinistres déclarés
+montant_sinistres	float	Montant total des sinistres payés
+date_derniere_sinistre	datetime	Date du dernier sinistre
+region	str	Région de résidence de l’assuré
+bonus_malus	float	Coefficient bonus/malus pour l’auto
+
