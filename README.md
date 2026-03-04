@@ -8,7 +8,7 @@
 
 ## 🌐 Démo en Ligne
 
-👉 **[Voir le dashboard en ligne](https://assuranalytics1.onrender.com)**
+👉 **[Voir le dashboard en ligne](https://assur-analytics.onrender.com)**
 
 > ⚠️ Hébergé sur Render (plan gratuit) — le service peut mettre ~30 secondes à démarrer après une période d'inactivité.
 
@@ -281,3 +281,4 @@ Mastère 2 Big Data & Data Stratégie
 Projet académique — Mastère 2 Big Data & Data Stratégie.  
 
 Tous droits réservés © 2026 Sona KOULIBALY.
+
