@@ -34,13 +34,23 @@ app = dash.Dash(
 server = app.server
 
 # ── Clé secrète sécurisée via variable d'environnement ──
-server.secret_key = os.environ.get("SECRET_KEY", "dev-key-insecure-change-in-prod")
+server.secret_key = os.environ.get("SECRET_KEY", "dev-key-change-in-prod")
 
 # ════════════════════════════════════════════════════════════════
 # CHARGEMENT ET ENRICHISSEMENT DES DONNÉES
 # ════════════════════════════════════════════════════════════════
+
+# Chemin absolu — fonctionne en local ET sur Render
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(BASE_DIR, "data", "assurance_data_1000.csv")
+
+# Vérification que le fichier existe (aide au débogage sur Render)
+if not os.path.exists(DATA_PATH):
+    raise FileNotFoundError(
+        f"Fichier CSV introuvable : {DATA_PATH}\n"
+        f"Répertoire courant : {os.getcwd()}\n"
+        f"Contenu de BASE_DIR : {os.listdir(BASE_DIR)}"
+    )
 
 df = pd.read_csv(DATA_PATH, sep=';')
 
