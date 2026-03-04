@@ -8,7 +8,7 @@ import dash_bootstrap_components as dbc
 from dash import html, dcc
 
 
-def create_layout():
+def create_layout(app=None):
     return dbc.Container([
 
         # ══════════════════════════════════════════════════════
@@ -674,5 +674,6 @@ def create_layout():
                 ], className='footer')
             ], width=12)
         ])
+
 
     ], fluid=True, className='main-container')
