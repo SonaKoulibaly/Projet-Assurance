@@ -1,7 +1,7 @@
 /* =============================================================
    style.css — AssurAnalytics
    Projet : Analyse des Sinistres & Profil des Assurés
-   Auteur : Sona KOULIBALY — Mastère 2 Big Data & Data Stratégie
+   Auteur : Sona KOULIBALY Mastère 2 Big Data & Data Strategy
    Design  : Fusion Aurora × Porcelain
    ============================================================= */
 
@@ -589,3 +589,4 @@ body {
   .kpi-value         { font-size: 1.25rem !important; }
   .export-buttons    { flex-wrap: wrap; gap: 6px; }
 }
+
